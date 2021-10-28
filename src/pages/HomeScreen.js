@@ -53,8 +53,8 @@ function HomeScreen() {
   ];
 
   return (
-    <div className=" w-full">
-      <section className="space-y-6 mb-6 w-full">
+    <div className=" w-full font-sans">
+      <section className=" mb-6 w-full">
         <Slider {...config}>
           {products.map((x, i) => {
             return (
@@ -70,14 +70,173 @@ function HomeScreen() {
         </Slider>
       </section>
 
-      <section className="space-y-6 mb-6 container mx-auto w-4/5">
-        <div className="text-center font-bold text-lg">Our Mission</div>
-        <div className="text-center">
-          "To inspire moments of Happiness, to create value, to build a strong and profitable service that makes a difference on how customers are treated"
+      <section className="mb-4 container mx-auto w-4/5">
+        <div className="text-center font-bold text-lg">- Our Mission -</div>
+        <div className="text-center italic mb-2">
+          "To build a strong and profitable service that makes a difference on
+          how customers are treated"
         </div>
-         <div className="text-center font-bold text-lg">Our Vision</div>
-        <div className="text-center">
-          "To be earths most customer-centric company where we serve the needs of our customers wherever they are and make them happy."
+        <div className="text-center font-bold text-lg">- Our Vision -</div>
+        <div className="text-center italic mb-2">
+          "To be earths most customer-centric company where we serve the needs
+          of our customers wherever they are and make them happy."
+        </div>
+
+        <div className="text-center font-bold text-lg">- Values -</div>
+        <div className="text-center italic">
+          Integrity | Respect | Responsibility | Accountability | Honesty
+        </div>
+      </section>
+      <section className=" mb-4 container mx-auto bg-gray-100 w-full">
+        <div className="container mx-auto flex flex-col md:flex-row items-center my-10 md:my-10">
+          <div className="flex flex-col w-full lg:w-1/2 justify-center items-start pt-4 pb-4 px-6">
+            <p className="uppercase tracking-loose font-bold mb-4 text-xl">About Us</p>
+
+            <p className="leading-normal mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              quis molestie nisl. Ut risus ligula, viverra a justo in, molestie
+              tempor metus. Nullam rutrum posuere mi sed fringilla. Suspendisse
+              scelerisque, arcu vel scelerisque imperdiet, sapien quam placerat
+              mi, quis auctor ante est vitae nunc. Duis quis dictum mi. Sed
+              luctus erat ac aliquam porta. Curabitur pharetra consectetur velit
+              eu ultrices. Nulla at justo in ante tempor ornare at at sem.
+              Interdum et malesuada fames ac ante ipsum primis in...
+            </p>
+            <button className="bg-transparent hover:bg-gray-900 text-gray-900 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">
+              View More
+            </button>
+          </div>
+
+          <div className="w-full lg:w-1/2 lg:py-6 text-center">
+            <img
+              src="https://i.postimg.cc/rm02KfLG/lumensoft-technologies-Wa-GMKm-J2-F0-Y-unsplash.jpg"
+              alt=""
+              className="rounded-md"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto ">
+      
+        <div className="text-center font-bold text-xl">What we do</div>
+        <div className="text-center w-full">
+          Duis consequat consequat libero vitae fermentum. Vestibulum tincidunt
+          enim sem, quis porttitor ex cursus ut. Nam at dapibus magna. Nulla
+          lacinia orci dolor, id iaculis ligula suscipit id. Aliquam facilisis
+          iaculis finibus. Donec fermentum ligula placerat nibh condimentum, et
+          finibus odio efficitur. Maecenas convallis sodales tincidunt.
+          Curabitur vel suscipit augue. Vivamus ac condimentum tellus. Donec
+          ullamcorper erat nibh, at euismod
+        </div>
+
+        <div className="flex flex-wrap justify-between pt-12 -mx-6">
+          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+              <img
+                src="https://i.postimg.cc/NM2hBXLP/technical-support-1.png"
+                className="h-24 w-full rounded-t pb-6 object-contain"
+                alt=""
+              />
+              <div className="text-center font-medium">24/7 Online support</div>
+              <p className="text-gray-800 text-center text-base px-6 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum
+                dolor sit amet, consectetur adipiscing elit. Aliquam at ip
+                Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+              </p>
+
+              <div className="text-center underline mb-2">Learn more</div>
+            </div>
+          </div>
+
+          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+              <img
+                src="https://i.postimg.cc/wjKTR6Dr/megaphone.png"
+                className="h-24 w-full rounded-t pb-6 object-contain"
+                alt=""
+              />
+              <div className="text-center font-medium">Tele Marketing</div>
+              <p className="text-gray-800 text-center text-base px-6 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum
+                dolor sit amet, consectetur adipiscing elit. Aliquam at ip
+                Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+              </p>
+              <div className="text-center underline mb-2">Learn more</div>
+            </div>
+          </div>
+
+          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+              <img
+                src="https://i.postimg.cc/8PsVHsR5/strategy.png"
+                className="h-24 w-full rounded-t pb-6 object-contain"
+                alt=""
+              />
+              <div className="text-center font-medium">Strategy & Consulting</div>
+              <p className="text-gray-800 text-center text-base px-6 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum
+                dolor sit amet, consectetur adipiscing elit. Aliquam at ip
+                Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+              </p>
+              <div className="text-center underline mb-2">Learn more</div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section className="mt-6">
+        <div className="text-center font-bold mb-4 text-xl"> Get in touch</div>
+
+        <div className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
+          <div className="flex flex-col justify-between">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+                Lets talk about everything!
+              </h2>
+              <div className="text-gray-700 mt-8 mb-3">
+                Hate forms? Send us an <span className="underline">email</span>{" "}
+                instead.
+              </div>
+            </div>
+            <img
+              className="h-64 w-full rounded-t pb-6 object-contain"
+              src="https://i.postimg.cc/zvBjRyLZ/email.png"
+              alt=""
+            />
+          </div>
+          <div className="">
+            <div>
+              <span className="uppercase text-sm text-gray-600 font-bold">
+                Full Name
+              </span>
+              <input
+                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder=""
+              />
+            </div>
+            <div className="mt-8">
+              <span className="uppercase text-sm text-gray-600 font-bold">
+                Email
+              </span>
+              <input
+                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+              />
+            </div>
+            <div className="mt-8">
+              <span className="uppercase text-sm text-gray-600 font-bold">
+                Message
+              </span>
+              <textarea className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+            </div>
+            <div className="mt-8">
+              <button className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                Send Message
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>

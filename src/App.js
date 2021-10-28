@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeScreen from "./pages/HomeScreen"
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 // import Details from "./pages/details";
 // import Reviews from "./pages/reviews";
 // import Shop from "./pages/shop";
@@ -23,6 +23,7 @@ function App() {
       <Route path="/upcomingEvents" component={UpcomingEvents} /> */}
 
       {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
