@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const ref = useRef();
@@ -77,16 +78,21 @@ const Navbar = () => {
               </div>
 
               <div className="relative">
-                <Link to="/" className="text-black no-underline">
+                <HashLink
+                  smooth
+                  to="/#service"
+                  className="text-black no-underline"
+                >
                   <div className="ml-2 inline-flex px-2 py-2 text-base rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer">
                     Service
-                  </div>
-                </Link>
+                  </div>{" "}
+                </HashLink>
+                
               </div>
 
               <div className={navOpen ? " block" : " hidden"}>
                 <div className="relative">
-                  <Link to="/" className="text-black no-underline">
+                  <Link to="/about" className="text-black no-underline">
                     <div className="ml-2 inline-flex px-2 py-2 text-base rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer">
                       About
                     </div>
@@ -94,11 +100,15 @@ const Navbar = () => {
                 </div>
 
                 <div className="relative">
-                  <Link to="/" className="text-black no-underline">
+                  <HashLink
+                    smooth
+                    to="/#contact"
+                    className="text-black no-underline"
+                  >
                     <div className="ml-2 inline-flex px-2 py-2 text-base rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer">
                       Contact
                     </div>
-                  </Link>
+                  </HashLink>
                 </div>
               </div>
             </nav>
@@ -135,17 +145,20 @@ const Navbar = () => {
               }
             >
               <div className="hidden md:block">
-                <Link to="/" className="text-black no-underline">
+                <Link to="/about" className="text-black no-underline">
                   <div className="ml-2 inline-flex px-2 py-2 text-base rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer">
                     About
                   </div>
                 </Link>
-
-                <Link to="/" className="text-black no-underline">
+                <HashLink
+                  smooth
+                  to="/#contact"
+                  className="text-black no-underline"
+                >
                   <div className="ml-2 inline-flex px-2 py-2 text-base rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer">
                     Contact
                   </div>
-                </Link>
+                </HashLink>
               </div>
             </nav>
           </div>

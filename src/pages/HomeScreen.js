@@ -6,7 +6,7 @@ import Slider from "react-slick";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function HomeScreen() {
   //   const [show, setShow] = useState(false);
@@ -70,7 +70,7 @@ function HomeScreen() {
         </Slider>
       </section>
 
-      <section className="mb-4 container mx-auto w-4/5">
+      {/* <section className="mb-4 container mx-auto w-4/5">
         <div className="text-center font-bold text-lg">- Our Mission -</div>
         <div className="text-center italic mb-2">
           "To build a strong and profitable service that makes a difference on
@@ -86,25 +86,27 @@ function HomeScreen() {
         <div className="text-center italic">
           Integrity | Respect | Responsibility | Accountability | Honesty
         </div>
-      </section>
+      </section> */}
       <section className=" mb-4 container mx-auto bg-gray-100 w-full">
         <div className="container mx-auto flex flex-col md:flex-row items-center my-10 md:my-10">
           <div className="flex flex-col w-full lg:w-1/2 justify-center items-start pt-4 pb-4 px-6">
-            <p className="uppercase tracking-loose font-bold mb-4 text-xl">About Us</p>
+            <p className="uppercase tracking-loose font-bold mb-4 text-xl md:text-4xl underline">
+              About Us
+            </p>
 
             <p className="leading-normal mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              quis molestie nisl. Ut risus ligula, viverra a justo in, molestie
-              tempor metus. Nullam rutrum posuere mi sed fringilla. Suspendisse
-              scelerisque, arcu vel scelerisque imperdiet, sapien quam placerat
-              mi, quis auctor ante est vitae nunc. Duis quis dictum mi. Sed
-              luctus erat ac aliquam porta. Curabitur pharetra consectetur velit
-              eu ultrices. Nulla at justo in ante tempor ornare at at sem.
-              Interdum et malesuada fames ac ante ipsum primis in...
+              We retain customers and extract more value from them by providing
+              top-notch customer service, businesses recoup customer acquisition
+              costs and cultivate a loyal following that refers to customer
+              service and provides testimonials and reviews by providing
+              customized service solutions to a wide variety of industries,
+              providing multi-channel support services...
             </p>
-            <button className="bg-transparent hover:bg-gray-900 text-gray-900 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">
-              View More
-            </button>
+            <Link to="/about" className="text-black no-underline">
+              <button className="bg-transparent hover:bg-gray-900 text-gray-900 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">
+                View More
+              </button>
+            </Link>
           </div>
 
           <div className="w-full lg:w-1/2 lg:py-6 text-center">
@@ -116,17 +118,17 @@ function HomeScreen() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto ">
-      
-        <div className="text-center font-bold text-xl">What we do</div>
-        <div className="text-center w-full">
-          Duis consequat consequat libero vitae fermentum. Vestibulum tincidunt
-          enim sem, quis porttitor ex cursus ut. Nam at dapibus magna. Nulla
-          lacinia orci dolor, id iaculis ligula suscipit id. Aliquam facilisis
-          iaculis finibus. Donec fermentum ligula placerat nibh condimentum, et
-          finibus odio efficitur. Maecenas convallis sodales tincidunt.
-          Curabitur vel suscipit augue. Vivamus ac condimentum tellus. Donec
-          ullamcorper erat nibh, at euismod
+      <section className="container mx-auto" id="service">
+        <div className="text-center font-bold text-xl md:text-4xl mb-4 underline">
+          What we do
+        </div>
+        <div className="w-11/12 text-center px-16">
+          With our fully trained agents we make sure they have knowledge
+          required to give consumers what they want, we are empowered with the
+          right technologies and have the ability to handle complex
+          interactions, encourage new transactions, resolve issues quickly and
+          win customers loyalty.We offer a superior customer experience based on
+          a personalised service delivery
         </div>
 
         <div className="flex flex-wrap justify-between pt-12 -mx-6">
@@ -139,12 +141,11 @@ function HomeScreen() {
               />
               <div className="text-center font-medium">24/7 Online support</div>
               <p className="text-gray-800 text-center text-base px-6 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum
-                dolor sit amet, consectetur adipiscing elit. Aliquam at ip
-                Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                We provide outsourced customer contact services that specialise
+                in the operation of outbound and inbound.
               </p>
 
-              <div className="text-center underline mb-2">Learn more</div>
+              {/* <div className="text-center underline mb-2">Learn more</div> */}
             </div>
           </div>
 
@@ -157,11 +158,10 @@ function HomeScreen() {
               />
               <div className="text-center font-medium">Tele Marketing</div>
               <p className="text-gray-800 text-center text-base px-6 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum
-                dolor sit amet, consectetur adipiscing elit. Aliquam at ip
-                Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                We welcome and help new customers understand the product or
+                services you provide.
               </p>
-              <div className="text-center underline mb-2">Learn more</div>
+              {/* <div className="text-center underline mb-2">Learn more</div> */}
             </div>
           </div>
 
@@ -172,21 +172,24 @@ function HomeScreen() {
                 className="h-24 w-full rounded-t pb-6 object-contain"
                 alt=""
               />
-              <div className="text-center font-medium">Strategy & Consulting</div>
+              <div className="text-center font-medium">
+                Strategy & Consulting
+              </div>
               <p className="text-gray-800 text-center text-base px-6 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum
-                dolor sit amet, consectetur adipiscing elit. Aliquam at ip
-                Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                We support your customers after they buy and use your products
+                or services which will help them have an easy and enjoyable
+                experience with you.
               </p>
-              <div className="text-center underline mb-2">Learn more</div>
+              {/* <div className="text-center underline mb-2">Learn more</div> */}
             </div>
           </div>
         </div>
-        
       </section>
 
-      <section className="mt-6">
-        <div className="text-center font-bold mb-4 text-xl"> Get in touch</div>
+      <section className="mt-6 mb-4" id='contact'>
+        <div className="text-center font-bold mb-4 text-xl md:text-4xl underline">
+          Get in touch
+        </div>
 
         <div className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
           <div className="flex flex-col justify-between">
@@ -195,8 +198,7 @@ function HomeScreen() {
                 Lets talk about everything!
               </h2>
               <div className="text-gray-700 mt-8 mb-3">
-                Hate forms? Send us an <span className="underline">email</span>{" "}
-                instead.
+                Send us an <span className="underline">email</span>
               </div>
             </div>
             <img
@@ -206,36 +208,51 @@ function HomeScreen() {
             />
           </div>
           <div className="">
-            <div>
-              <span className="uppercase text-sm text-gray-600 font-bold">
-                Full Name
-              </span>
-              <input
-                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text"
-                placeholder=""
-              />
-            </div>
-            <div className="mt-8">
-              <span className="uppercase text-sm text-gray-600 font-bold">
-                Email
-              </span>
-              <input
-                className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text"
-              />
-            </div>
-            <div className="mt-8">
-              <span className="uppercase text-sm text-gray-600 font-bold">
-                Message
-              </span>
-              <textarea className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-            </div>
-            <div className="mt-8">
-              <button className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-                Send Message
-              </button>
-            </div>
+            <form
+              action="https://formsubmit.co/gideonollonde@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <div>
+                <span className="uppercase text-sm text-gray-600 font-bold">
+                  Full Name
+                </span>
+                <input
+                  className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="text"
+                  name="name"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div className="mt-8">
+                <span className="uppercase text-sm text-gray-600 font-bold">
+                  Email
+                </span>
+                <input
+                  className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="text"
+                  name="email"
+                  required
+                />
+              </div>
+              <div className="mt-8">
+                <span className="uppercase text-sm text-gray-600 font-bold">
+                  Message
+                </span>
+                <textarea
+                  className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="text"
+                  name="message"
+                  required
+                />
+              </div>
+              <div className="mt-8">
+                <button className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                  Send Message
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
