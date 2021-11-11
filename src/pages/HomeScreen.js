@@ -213,6 +213,7 @@ function HomeScreen() {
               method="POST"
             >
               <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://jg-agency.netlify.app/Thanks"/>
               <div>
                 <span className="uppercase text-sm text-gray-600 font-bold">
                   Full Name
