@@ -8,7 +8,7 @@ function About() {
           About
         </p>
         <p className="uppercase tracking-loose font-semibold mb-4 text-xl md:text-5xl">
-          Jg Agency
+          JANE & GIDEON AGENCY LIMITED
         </p>
       </section>
 
@@ -28,10 +28,10 @@ function About() {
             </p>
 
             <p className="leading-normal mb-4">
-              Jg Agency is a leading Customer Relations company providing
-              telemarketing and customer service solutions. We design, develop,
-              operate and maintain values which will help you build customer
-              loyalty.
+              Jane & Gideon Agency Limited is a leading Customer Relations
+              company providing telemarketing and customer service solutions. We
+              design, develop, operate and maintain values which will help you
+              build customer loyalty.
             </p>
             <p className="leading-normal mb-4">
               Matching the customer demands of our clients’ industries, we

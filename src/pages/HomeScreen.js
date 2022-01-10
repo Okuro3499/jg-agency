@@ -70,23 +70,6 @@ function HomeScreen() {
         </Slider>
       </section>
 
-      {/* <section className="mb-4 container mx-auto w-4/5">
-        <div className="text-center font-bold text-lg">- Our Mission -</div>
-        <div className="text-center italic mb-2">
-          "To build a strong and profitable service that makes a difference on
-          how customers are treated"
-        </div>
-        <div className="text-center font-bold text-lg">- Our Vision -</div>
-        <div className="text-center italic mb-2">
-          "To be earths most customer-centric company where we serve the needs
-          of our customers wherever they are and make them happy."
-        </div>
-
-        <div className="text-center font-bold text-lg">- Values -</div>
-        <div className="text-center italic">
-          Integrity | Respect | Responsibility | Accountability | Honesty
-        </div>
-      </section> */}
       <section className=" mb-4 container mx-auto bg-gray-100 w-full">
         <div className="container mx-auto flex flex-col md:flex-row items-center my-10 md:my-10">
           <div className="flex flex-col w-full lg:w-1/2 justify-center items-start pt-4 pb-4 px-6">
@@ -186,7 +169,7 @@ function HomeScreen() {
         </div>
       </section>
 
-      <section className="mt-6 mb-4" id='contact'>
+      <section className="mt-6 mb-4" id="contact">
         <div className="text-center font-bold mb-4 text-xl md:text-4xl underline">
           Get in touch
         </div>
@@ -213,7 +196,11 @@ function HomeScreen() {
               method="POST"
             >
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://jg-agency.netlify.app/Thanks"/>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://jg-agency.netlify.app/Thanks"
+              />
               <div>
                 <span className="uppercase text-sm text-gray-600 font-bold">
                   Full Name
